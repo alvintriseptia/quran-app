@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ScrollArrow from "./components/ScrollArrow.js";
+import Router from "./router";
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from "./components/theme.js";
+import { useDarkMode } from "./components/useDarkMode.js";
+import { GlobalStyles } from "./global.js";
+import Toggle from "./components/Toggle";
 
-function App() {
+const App = () => {
+  const [theme, toggleTheme, componentMounted] = useDarkMode();
+  const themeMode = theme === "light" ? lightTheme : darkTheme;
+
+  if (!componentMounted) {
+    return <div />;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={themeMode}>
+        <Toggle theme={theme} toggleTheme={toggleTheme} />
+        <Router />
+        <GlobalStyles />
+        <ScrollArrow />
+      </ThemeProvider>
+    </>
   );
-}
+};
 
 export default App;
