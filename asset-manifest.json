@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/quran-app/static/css/main.1f0e2347.chunk.css",
+    "main.js": "/quran-app/static/js/main.89ecfa01.chunk.js",
+    "main.js.map": "/quran-app/static/js/main.89ecfa01.chunk.js.map",
+    "runtime-main.js": "/quran-app/static/js/runtime-main.930a3c0d.js",
+    "runtime-main.js.map": "/quran-app/static/js/runtime-main.930a3c0d.js.map",
+    "static/js/2.57511c35.chunk.js": "/quran-app/static/js/2.57511c35.chunk.js",
+    "static/js/2.57511c35.chunk.js.map": "/quran-app/static/js/2.57511c35.chunk.js.map",
+    "static/js/3.3680fc10.chunk.js": "/quran-app/static/js/3.3680fc10.chunk.js",
+    "static/js/3.3680fc10.chunk.js.map": "/quran-app/static/js/3.3680fc10.chunk.js.map",
+    "index.html": "/quran-app/index.html",
+    "static/css/main.1f0e2347.chunk.css.map": "/quran-app/static/css/main.1f0e2347.chunk.css.map",
+    "static/js/2.57511c35.chunk.js.LICENSE.txt": "/quran-app/static/js/2.57511c35.chunk.js.LICENSE.txt",
+    "static/media/moon.78f79f31.svg": "/quran-app/static/media/moon.78f79f31.svg",
+    "static/media/sun.f681ac14.svg": "/quran-app/static/media/sun.f681ac14.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.930a3c0d.js",
+    "static/js/2.57511c35.chunk.js",
+    "static/css/main.1f0e2347.chunk.css",
+    "static/js/main.89ecfa01.chunk.js"
+  ]
+}
